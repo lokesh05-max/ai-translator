@@ -9,7 +9,7 @@ export default function Home() {
   const [sourceLang, setSourceLang] = useState('en');
   const [targetLang, setTargetLang] = useState('es');
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
   const particlesRef = useRef<Array<{x: number, y: number, size: number, speedX: number, speedY: number}>>([]);
 
   // Initialize particles
